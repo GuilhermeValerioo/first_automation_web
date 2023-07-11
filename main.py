@@ -13,6 +13,7 @@ nav = webdriver.Chrome(service=servico)
 # importar/visualizar base de dados
 tabela_produtos = pd.read_excel("buscas.xlsx")
 
+# definindo funções
 def verificar_tem_termos_banidos(lista_termos_banidos, nome):
     tem_termos_banidos = False
     for palavra in lista_termos_banidos:
